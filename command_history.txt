@@ -1,0 +1,141 @@
+Last login: Sat Jan 29 00:08:45 on ttys001
+(base) jaysen@Jays-Macbook-Pro ~ % ls
+Applications			Desktop				Dropbox				Music				Public
+Applications (Parallels)	Documents			Library				Parallels			inexpensive_loans.csv
+Creative Cloud Files		Downloads			Movies				Pictures			opt
+(base) jaysen@Jays-Macbook-Pro ~ % cd desktop
+(base) jaysen@Jays-Macbook-Pro desktop % cd fintech
+(base) jaysen@Jays-Macbook-Pro fintech % git clone https://github.com/jaydsen/Module_2_Challenge.git
+Cloning into 'Module_2_Challenge'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+(base) jaysen@Jays-Macbook-Pro fintech % ls
+Admin			Challenges		Class Activities	GitLab Repository	Module_2_Challenge	Practice		Resources
+(base) jaysen@Jays-Macbook-Pro fintech % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	Admin/
+	Challenges/
+	Class Activities/
+	GitLab Repository/
+	Module_2_Challenge/
+	Practice/
+	Resources/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) jaysen@Jays-Macbook-Pro fintech % cd Module_2_Challenge
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	app.py
+	data/
+	qualifier/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git add README.md
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git add app.py
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git add data/
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git add qualifier/
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+	new file:   app.py
+	new file:   data/daily_rate_sheet.csv
+	new file:   qualifier/filters/credit_score.py
+	new file:   qualifier/filters/debt_to_income.py
+	new file:   qualifier/filters/loan_to_value.py
+	new file:   qualifier/filters/max_loan_size.py
+	new file:   qualifier/utils/calculators.py
+	new file:   qualifier/utils/fileio.py
+
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % touch command_history.txt
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % ls
+README.md		app.py			command_history.txt	data			qualifier
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+	new file:   app.py
+	new file:   data/daily_rate_sheet.csv
+	new file:   qualifier/filters/credit_score.py
+	new file:   qualifier/filters/debt_to_income.py
+	new file:   qualifier/filters/loan_to_value.py
+	new file:   qualifier/filters/max_loan_size.py
+	new file:   qualifier/utils/calculators.py
+	new file:   qualifier/utils/fileio.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	command_history.txt
+
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git add command_history.txt
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+	new file:   app.py
+	new file:   command_history.txt
+	new file:   data/daily_rate_sheet.csv
+	new file:   qualifier/filters/credit_score.py
+	new file:   qualifier/filters/debt_to_income.py
+	new file:   qualifier/filters/loan_to_value.py
+	new file:   qualifier/filters/max_loan_size.py
+	new file:   qualifier/utils/calculators.py
+	new file:   qualifier/utils/fileio.py
+
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git commit -m "initial commitments of Module 2 Challenge files"
+[main 1a20ec8] initial commitments of Module 2 Challenge files
+ 10 files changed, 358 insertions(+), 1 deletion(-)
+ rewrite README.md (100%)
+ create mode 100644 app.py
+ create mode 100644 command_history.txt
+ create mode 100644 data/daily_rate_sheet.csv
+ create mode 100644 qualifier/filters/credit_score.py
+ create mode 100644 qualifier/filters/debt_to_income.py
+ create mode 100644 qualifier/filters/loan_to_value.py
+ create mode 100644 qualifier/filters/max_loan_size.py
+ create mode 100644 qualifier/utils/calculators.py
+ create mode 100644 qualifier/utils/fileio.py
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git push
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (16/16), 4.87 KiB | 2.43 MiB/s, done.
+Total 16 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/jaydsen/Module_2_Challenge.git
+   283442f..1a20ec8  main -> main
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % 
