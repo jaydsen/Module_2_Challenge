@@ -138,4 +138,36 @@ Total 16 (delta 2), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (2/2), done.
 To https://github.com/jaydsen/Module_2_Challenge.git
    283442f..1a20ec8  main -> main
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git commit -m "First update to command_history.txt document to reflect terminal commands"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   command_history.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git add command_history.txt
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   command_history.txt
+
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git commit -m "First update to command_history.txt document to reflect terminal commands"
+[main adbc5b6] First update to command_history.txt document to reflect terminal commands
+ 1 file changed, 141 insertions(+)
+(base) jaysen@Jays-Macbook-Pro Module_2_Challenge % git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.55 KiB | 1.55 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/jaydsen/Module_2_Challenge.git
+   1a20ec8..adbc5b6  main -> main
 (base) jaysen@Jays-Macbook-Pro Module_2_Challenge % 
